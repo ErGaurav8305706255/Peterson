@@ -82,12 +82,12 @@ class _WelcomePageState extends State<WelcomePage> {
                                  fontSize: 15,
                                  color: Colors.white,
                                )),Spacer(),
-                               Icon(Icons.search,color: Colors.white),
+                               Icon(Icons.more_vert,color: Colors.white),
                              ],
                            ),
                            Row(
                              children: const [
-                               Icon(Icons.lock_clock,color: Colors.white,),
+                               Icon(Icons.access_time_rounded,color: Colors.white,),
                                Text('12 jan 2020, 8am-10am',style: TextStyle(
                                  color: Colors.white,fontSize: 17,
                                ),),

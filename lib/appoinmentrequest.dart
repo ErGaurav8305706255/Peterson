@@ -132,33 +132,31 @@ class _AppoinmentRequestState extends State<AppoinmentRequest> {
           )),
 
       bottomNavigationBar: Container(color: Colors.white,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
-          child: Row(
-            children: [
-              InkWell(onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context)=> const WelcomePage()
-                ));
-              },
-                child: Container(
-                    padding: const EdgeInsets.all(15),
-                    width: 180,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),color: Colors.blue
-                    ),
-                    child: const Text('ACCEPT',textAlign: TextAlign.center,)),
-              ),
-              const Spacer(),
-              Container(
-                  width: 120,
+        padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+        child: Row(
+          children: [
+            InkWell(onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context)=> const WelcomePage()
+              ));
+            },
+              child: Container(
                   padding: const EdgeInsets.all(15),
+                  width: 180,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),color: Colors.grey[300]
+                      borderRadius: BorderRadius.circular(20),color: Colors.blue
                   ),
-                  child: const Text('DECLINE',textAlign: TextAlign.center,)),
-            ],
-          ),
+                  child: const Text('ACCEPT',textAlign: TextAlign.center,)),
+            ),
+            const Spacer(),
+            Container(
+                width: 120,
+                padding: const EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),color: Colors.grey[300]
+                ),
+                child: const Text('DECLINE',textAlign: TextAlign.center,)),
+          ],
         ),
       ),
 
